@@ -10,8 +10,6 @@ export class HeroeTarjetaComponent implements OnInit {
 
   @Input() heroe!: Heroe;
 
-  
-
   constructor() { }
 
   ngOnInit(): void {

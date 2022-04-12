@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgregarComponent implements OnInit {
 
+  publishers = [
+    "DC comics",
+    "Marvel Comics"
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

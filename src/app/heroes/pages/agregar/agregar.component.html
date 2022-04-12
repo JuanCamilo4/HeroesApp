@@ -1,1 +1,62 @@
-<p>agregar works!</p>
+<h1>Nuevo héroe</h1>
+
+<div fxLayout="row" fxLayoutGrap="40px">
+    <div fxFlex="50" fxLayout="column">
+
+        <div fxLayout="row" fxLayoutGrap="20px">
+            <mat-form-field fxFlex="100">
+                <mat-label>Super Héroe</mat-label>
+                <input
+                    matInput 
+                    type="text"
+                    required>
+            </mat-form-field>
+    
+            <mat-form-field fxFlex="100">
+                <mat-label>Alter Ego</mat-label>
+                <input
+                    matInput 
+                    type="text"
+                    required>
+            </mat-form-field>
+        </div>
+
+        <mat-form-field fxFlex="100">
+            <mat-label>Primera aparición</mat-label>
+            <input
+                matInput 
+                type="text"
+                required>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100">
+            <mat-label>Personajes</mat-label>
+            <input
+                matInput 
+                type="text"
+                required>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100">
+            <mat-label>Creador</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let item of publishers"
+                    [value]="item">
+                    {{item}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="100">
+            <mat-label>Foto - URL</mat-label>
+            <input
+                matInput 
+                type="url"
+                required>
+        </mat-form-field>
+    </div>
+
+    <div fxFlex="50">
+        
+    </div>
+</div>
